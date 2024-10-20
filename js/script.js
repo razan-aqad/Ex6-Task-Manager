@@ -90,8 +90,8 @@ function main() {
         console.log("\n Task Manager");
         console.log("1 . Add Task");
         console.log("2 . View Tasks");
-        console.log("3 . show Task Completion");
-        console.log("4 . Edit Task");
+        console.log("3 . Edit Task");
+        console.log("4 . show Task Completion ");
         console.log("5 . Delete Task");
         console.log("6. Exit");
 
