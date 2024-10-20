@@ -3,23 +3,18 @@
 // completion
 function TaskCompletion(tasks) {
     displayTasks(tasks);
-    if(true){
-            let taskId = parseInt(prompt("Give me the ID to check the task status"));
+        let taskId = parseInt(prompt("Give me the ID to check the task status"));
             
         if (taskId >= 0 && taskId < tasks.length) {
             let [description, completed] = tasks[taskId].split(' | ');
             let newStatus = completed === "true" ? "false" : "true";
             tasks[taskId] = `${description} | ${newStatus}`;
             saveTasks(tasks);
-            console.log("Task updated");
+            console.log("Task completed");
         } else {
             console.log("invalid ID");
         }
-    }else{
-        console.log("you can add tasks by choosing choice 1");
     }
-    
-}
 
 
 function loadTasks() {
